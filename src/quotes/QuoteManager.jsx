@@ -46,7 +46,7 @@ function QuoteManager() {
     }
   };
 
-  // Supprimer une citation
+  // Supprimer une citatione
   const handleDelete = async (id) => {
     if (window.confirm('Êtes-vous sûr de vouloir supprimer cette citation?')) {
       try {
