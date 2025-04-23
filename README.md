@@ -1,4 +1,3 @@
-
 # 📚 Citation Manager API
 
 Bienvenue dans le projet **Citation Manager**, une plateforme web pour consulter, gérer et partager des citations, avec des rôles utilisateur et des fonctionnalités avancées comme les favoris, les filtres, les likes, et plus encore !
@@ -66,10 +65,11 @@ L’authentification se fait par **JWT (JSON Web Token)** pour sécuriser l’ac
 ## ⚙️ Stack Technique (suggestion)
 
 - **Frontend** : React 
-- **Backend** : laravel
-- **Base de données** : MySQL
+- **Backend** : Laravel
+- **Base de données** : MySql
 - **Auth** : JWT
 - **Styles** : TailwindCSS
+
 
 ---
 
@@ -98,7 +98,6 @@ L’authentification se fait par **JWT (JSON Web Token)** pour sécuriser l’ac
 - [ ] CRUD citations
 - [ ] Filtres & recherche
 - [ ] Likes & favoris
-- [ ] Génération d’images (bonus)
 
 ---
 
