@@ -1,12 +1,113 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📚 Citation Manager API
 
-Currently, two official plugins are available:
+Bienvenue dans le projet **Citation Manager**, une plateforme web pour consulter, gérer et partager des citations, avec des rôles utilisateur et des fonctionnalités avancées comme les favoris, les filtres, les likes, et plus encore !
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Contexte du Projet
 
-## Expanding the ESLint configuration
+Ce projet a pour objectif de créer une application web connectée à une API sécurisée permettant la gestion de citations, avec une interface utilisateur adaptée selon le rôle (Utilisateur ou Admin).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗 Accès à l'API
+
+L’API est accessible via une URL sécurisée.  
+L’authentification se fait par **JWT (JSON Web Token)** pour sécuriser l’accès aux ressources.
+
+---
+
+## 🧩 Fonctionnalités à Implémenter
+
+### 🧑‍💻 Authentification et Gestion des Rôles
+
+- Page d’inscription et de connexion avec gestion du token JWT.
+- Affichage conditionnel du contenu selon le rôle de l’utilisateur :
+  - **Utilisateur** : Gère uniquement ses propres citations.
+  - **Admin** : Accès complet, y compris aux suppressions douces (soft delete).
+
+### 📝 Gestion des Citations (CRUD)
+
+- 📄 Lister les citations (avec filtres par mot-clé, catégorie, ou longueur).
+- ➕ Ajouter une nouvelle citation.
+- ✏️ Modifier une citation existante.
+- 🗑️ Supprimer une citation (suppression douce).
+- 🔍 Voir les détails d’une citation (auteur, tags, nombre de likes...).
+
+### 🎲 Citations Aléatoires
+
+- Bouton pour générer une ou plusieurs citations au hasard.
+
+### 📐 Filtrage
+
+- Filtres par :
+  - Longueur (nombre de mots),
+  - Catégorie,
+  - Tags.
+
+### 🔥 Popularité
+
+- Affichage des citations les plus populaires (basé sur les likes).
+
+### 📸 Génération d’Image (Bonus)
+
+- Génération d’une image contenant une citation populaire, prête à être partagée.
+
+### ❤️ Likes et Favoris
+
+- Possibilité de liker une citation.
+- Ajouter une citation à ses favoris.
+- Accès à une page **Mes favoris**.
+
+### 🗂️ Catégories et Tags
+
+- Attribution de **catégories** et **tags** aux citations.
+- Filtres disponibles par catégorie ou tag.
+
+---
+
+## ⚙️ Stack Technique (suggestion)
+
+- **Frontend** : React 
+- **Backend** : laravel
+- **Base de données** : MySQL
+- **Auth** : JWT
+- **Styles** : TailwindCSS
+
+---
+
+## 📁 Structure du Projet
+
+```bash
+📦 citation-manager
+├── 📂 public
+├── 📂 src
+│   ├── 📂 components
+│   ├── 📂 pages
+│   ├── 📂 services
+│   ├── 📂 utils
+│   └── App.js
+├── .env
+├── package.json
+└── README.md
+```
+
+---
+
+## ✅ À faire / Suivi
+
+- [ ] Authentification JWT
+- [ ] Rôles utilisateur
+- [ ] CRUD citations
+- [ ] Filtres & recherche
+- [ ] Likes & favoris
+- [ ] Génération d’images (bonus)
+
+---
+
+## 🤝 Contribuer
+
+Les contributions sont les bienvenues ! N’hésitez pas à ouvrir une issue ou proposer une pull request.
+
+---
+
+## 📝 Licence
+
+Ce projet est open-source et disponible sous la licence [MIT](LICENSE).
